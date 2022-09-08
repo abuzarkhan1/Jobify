@@ -7,7 +7,7 @@
   "scripts": {
     "install-server": "npm install",
     "install-dependencies": " npm run install-client && npm run install-server ",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm  --force install && npm run build",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && cd client && npm  --force install && npm run build",
     "server": "node server --ignore client",
     "client": "npm start --prefix client",
     "start": "node server.js"
