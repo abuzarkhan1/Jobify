@@ -10,7 +10,7 @@
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm  --force install-client && npm run build-client",
     "server": "node server --ignore client",
     "client": "npm start --prefix client",
-    "start": "concurrently --kill-others-on-fail \" npm run server\" \" npm run client\""
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
